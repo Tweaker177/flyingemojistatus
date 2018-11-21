@@ -49,7 +49,7 @@ if([!self fade] {
 
 %hook UIStatusBarForegroundStyleAttributes
  -(void) setCanShowBreadcrumbs:(bool)arg1 {
- if((KWantsNoCrumbs) && (kEnabled)) {
+ if((kWantsNoCrumbs) && (kEnabled)) {
 arg1=FALSE;
 return %orig(arg1);
 }
