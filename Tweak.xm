@@ -7,6 +7,7 @@
 #include <objc/runtime.h>               
 /*
 @interface UIStatusBarServiceItemView : UIView
+@property(nonatomic, assign)CGFloat alpha;
 @end                            
 
 static bool kWantsAnimated = YES;
@@ -17,6 +18,8 @@ static bool kWantsNoCrumbs = YES;
 static bool kWantsFadeAnim = YES;
 
 /**
+
+/****** Haven't integrated into tweak yet
 static void -(void) fade {
 if([!self fade] {
     [UIView animateWithDuration:1.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
@@ -30,16 +33,19 @@ if([!self fade] {
 }
 }//end if
 
--(void)fade2 {
+-(void)Anim2 {
 [UIView animateWithDuration:1.0f
                       delay:0.0f
                     options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
                  animations:^{
-                     // your animation code here
+                     //  animation code here
                  }
                 completion:nil];
 }
 **/
+
+*************/
+
 
 %hook UIStatusBarForegroundStyleAttributes
  -(void) setCanShowBreadcrumbs:(bool)arg1 {
