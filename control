@@ -1,0 +1,9 @@
+Package: com.i0stweak3r.flyingemojistatus
+Name: FlyingEmojiStatus
+Author: i0stweak3r 
+Description: Updates carrier info with text or Empji of your choice. Going to add animation options soon for a dynamic status bar. Great Zeppelin alternative. Tested and working on ios 11.3.1
+Depends: mobilesubstrate, preferenceloader
+Maintainer: i0stweak3r 
+Architecture: iphoneos-arm
+Section: Tweaks
+Version: 0.0.1

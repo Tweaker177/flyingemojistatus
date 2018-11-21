@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>alignment</key>
+			<integer>2</integer>
+			<key>cell</key>
+			<string>PSTitleValueCell</string>
+			<key>height</key>
+			<integer>90</integer>
+			<key>icon</key>
+			<string>icon@3x.png</string>
+			<key>label</key>
+			<string>🕊 Flying Emoji Status 🕊</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Turns on the tweak. Turn off to reset all changes to original values.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.flyingemojistatus-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>SRSwitchTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.flyingemojistatus</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enable tweak</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Enter desired emojis or characters to occupy the carrier text space. Make sure Zeppelin is disabled and any NoSim tweak’s status bar portion.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.flyingemojistatus-prefsreload</string>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.i0stweak3r.flyingemojistatus</string>
+			<key>detail</key>
+			<string>PSDetailController</string>
+			<key>key</key>
+			<string>text2</string>
+			<key>label</key>
+			<string>Carrier text:</string>
+			<key>placeholder</key>
+			<string>enter here</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Respring</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>respring:</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply changes</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTextCell</string>
+			<key>label</key>
+			<string>Made by i0s_tweak3r.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>twitter</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>twitter.png</string>
+			<key>label</key>
+			<string>Follow me on twitter</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Any and all donations are greatly appreciated. Help keep tweaks free for the community by choosing to be the one out of a thousand users to donate/ “buy”.</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>Paypal</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>icon</key>
+			<string>Paypal@2x.png</string>
+			<key>label</key>
+			<string>Donations much appreciated</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSTextCell</string>
+			<key>label</key>
+			<string>Animations+more coming soon.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string></string>
+</dict>
+</plist>
