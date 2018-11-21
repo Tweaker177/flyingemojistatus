@@ -17,10 +17,10 @@ static NSString *kText2;
 static bool kWantsNoCrumbs = YES;
 static bool kWantsFadeAnim = YES;
 
-/**
+
 
 /****** Haven't integrated into tweak yet
-static void -(void) fade {
+-(void)fade {
 if([!self fade] {
     [UIView animateWithDuration:1.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
                      animations:^{
@@ -42,7 +42,7 @@ if([!self fade] {
                  }
                 completion:nil];
 }
-**/
+
 
 *************/
 
@@ -56,10 +56,6 @@ return %orig(arg1);
 return %orig;
 }
 %end
-
-/**
-static NSMutableDictionary *prefs = [[NSMutableDictionary alloc] initWithContentsOfFile:PLIST_PATH];
-**/
 
 %hook SBTelephonyManager
 -(void)_reallySetOperatorName:(id)arg1 {
@@ -106,47 +102,6 @@ if(kEnabled) { return 1; }
 else { return %orig; }
 }
 %end
-/*
--(id)_crossfadeContentsImage {
-return %orig;
-}
-*/
-/***
-
-%new
-MSHookIvar<NSString *>(UIStatusBarServiceItemView, _serviceString) = kText2;
-
-UIStatusBarServiceItemView *itemView = [[super alloc] initWithFrame:frame];
-
-[UIView animateWithDuration:1
-                      delay:0
-                    options:UIViewKeyframeAnimationOptionAutoreverse | UIViewKeyframeAnimationOptionRepeat
-                 animations:^{
-                     self.transform = CGAffineTransformMakeScale(1.5, 1.5);
-                 }
-                 completion:nil];
-
-**/
-
-
-/****
-
-[UIView animateWithDuration:1
-                 animations:^{
-                     self.transform = CGAffineTransformMakeScale(1.5, 1.5);
-                 }
-                 completion:^(BOOL finished) {
-                     [UIView animateWithDuration:1
-                                      animations:^{
-                                          self.transform = CGAffineTransformIdentity;
-
-                                      }];
-                 }];
-}
-else { return; }
-}
-%end
-***************/
 
 
 static void
