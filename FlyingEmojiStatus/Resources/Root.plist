@@ -66,6 +66,30 @@
 			<key>placeholder</key>
 			<string>enter here</string>
 		</dict>
+				<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>F-Yo-Crumbs</string>
+			<key>footerText</key>
+			<string>Disables breadcrumbs (the back arrows in navigation bar after going somewhere from spotlight etc)</string>
+		</dict>
+				<dict>
+			<key>PostNotification</key>
+			<string>com.i0stweak3r.flyingemojistatus-prefsreload</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>cellClass</key>
+			<string>SRSwitchTableCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.i0stweak3r.flyingemojistatus</string>
+			<key>key</key>
+			<string>wantsNoBreadCrumbs</string>
+			<key>label</key>
+			<string>Disable breadcrumbs</string>
+		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
@@ -106,7 +130,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Any and all donations are greatly appreciated. Help keep tweaks free for the community by choosing to be the one out of a thousand users to donate/ “buy”.</string>
+			<string>Any and all donations are greatly appreciated. Help keep tweaks free for the community by choosing to be the one out of two thousand (or less) users to donate.</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -122,7 +146,7 @@
 			<key>cell</key>
 			<string>PSTextCell</string>
 			<key>label</key>
-			<string>Animations+more coming soon.</string>
+	<string>Animations+more coming soon.</string>
 		</dict>
 	</array>
 	<key>title</key>
