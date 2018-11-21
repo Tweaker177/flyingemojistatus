@@ -16,6 +16,7 @@ static NSString *kText2;
 static bool kWantsNoCrumbs = YES;
 static bool kWantsFadeAnim = YES;
 
+/**
 static void -(void) fade {
 if([!self fade] {
     [UIView animateWithDuration:1.0 options:UIViewAnimationOptionRepeat | UIViewAnimationOptionAutoreverse
@@ -38,6 +39,7 @@ if([!self fade] {
                  }
                 completion:nil];
 }
+**/
 
 %hook UIStatusBarForegroundStyleAttributes
  -(void) setCanShowBreadcrumbs:(bool)arg1 {
